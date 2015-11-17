@@ -38,9 +38,13 @@ $quality = 5;             <- output quality
 //sample code
 
 $test = new rcroper($src);
+
 $result = $test->crop($size,$destination,$format,5);
+
 var_dump($result);        <- crop function will return the file name.
+
 $crop->destory();         <- destory GD image, release ram.
+
 
 Server requirement
 ------------------
