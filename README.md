@@ -15,17 +15,28 @@ Usage
 
 //define variable
 $src = "test/demo.jpeg";  <- image soruce
+
 $destination = "";        <- location for save  cropped image
+
 $size = array(            <- output size array.
+
   array(720,480),            array($width,$height),
+
   array(640,480),
+
   array(320,240),
+
   array(160,160)
+
 );
+
 $format = IMAGETYPE_PNG;  <- output format
+
 $quality = 5;             <- output quality
 
+
 //sample code
+
 $test = new rcroper($src);
 $result = $test->crop($size,$destination,$format,5);
 var_dump($result);        <- crop function will return the file name.
